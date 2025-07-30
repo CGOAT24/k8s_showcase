@@ -24,5 +24,5 @@ go_restart:
 dotnet_restart:
     kubectl delete pod $(kubectl get pods | grep dotnet-api | awk '{print $1}')
 
-dashboard
+dashboard:
     minikube dashboard
